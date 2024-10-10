@@ -1,0 +1,110 @@
+html,
+body, #root {
+    height: 100%;
+}
+
+.bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.App-header {
+  min-height: calc(100vh - 7em);
+  text-align: center;
+}
+
+.Menu {
+  background-color: #F7F4F4;
+  width: 53rem;
+  height: 45rem;
+  display: flex;
+  margin-top: 3rem;
+  margin-right: 8rem;
+  border-radius: 1rem;
+  padding-right: 1rem;
+  float: right;
+  flex-direction: column;
+  text-align: left;
+}
+
+.menu-title {
+  color: #4D82AA;
+  font-size: 3.8rem;
+  line-height: 0.4rem;
+}
+
+.menu-items {
+  padding-left: 2rem;
+  padding-right: 1rem;
+  font-size: 1.5rem;
+  color: #707070;
+}
+
+.menu-buttons {
+  border: none;
+  padding: 1rem 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-button {
+  background-color: #4D82AA;
+  font-size: 5rem;
+  height: 6rem;
+  width: 6.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: #F7F4F4;
+}
+
+.menu-explanation {
+  background-color: #98CC98;
+  border-radius: 0.5rem;
+  height: 7%;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  margin: 2rem;
+  margin-top: 1.2rem;
+  color: #F7F4F4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.exclamation-bubble {
+  position: relative;
+  bottom: 0.4rem;
+  background-color: #4D82AA;
+  height: 4rem;
+  width: 4rem;
+  font-size: 3rem;
+  border-radius: 4rem;
+  text-align: center;
+  margin: 0;
+}
+
+.question-bubble {
+  position: relative;
+  bottom: 0.4rem;
+  background-color: #4D82AA;
+  height: 4rem;
+  width: 4rem;
+  font-size: 3rem;
+  border-radius: 4rem;
+  text-align: center;
+  margin: 0;
+}
+
+.explanation-text {
+  color: #F7F4F4;
+  padding-right: 4rem;
+  font-size: 1.3rem;
+  position: relative;
+  bottom: 0.3rem;
+}
+
+.padding-0 {
+  line-height: 0.5rem;
+}

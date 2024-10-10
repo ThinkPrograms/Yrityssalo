@@ -1,0 +1,32 @@
+.Footer {
+    height: 7rem;
+    width: 100%;
+    background: #2C2C2C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Footer-logo {
+    position: relative;
+    bottom: 1.4rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    font-size: 2rem;
+    float: left;
+}
+
+.footer-elements {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10rem;
+    padding-bottom: 2rem;
+    color: #d6d6d6;
+}
