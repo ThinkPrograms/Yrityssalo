@@ -1,7 +1,7 @@
 import '../css/Navbar.css';
 import { FaHome, FaCheck } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({ selected }) => {
     return (
         <>
         <div className="navbar">
@@ -13,34 +13,34 @@ const Navbar = () => {
                     </a>
 
                 <div className="menu-sections">
-                    <div className='menu-section menu-section-selected'>
+                    <a className={'menu-section '  + (selected === 1 ? 'menu-section-selected' : '')} href='./Section_1'>
                         <b className='section-number'>1</b>
                         <p className='section-text'>Osaamisen tarve</p>
-                    </div>
-                    <div className='menu-section'>
+                    </a>
+                    <a className={'menu-section '  + (selected === 2 ? 'menu-section-selected' : '')}  href='./Section_2'>
                         <b className='section-number'>2</b>
                         <p className='section-text'>Työpaikka-ilmoitus</p>
-                    </div>
-                    <div className='menu-section'>
+                    </a>
+                    <a className={'menu-section '  + (selected === 3 ? 'menu-section-selected' : '')} href='./Section_3'>
                         <b className='section-number'>3</b>
                         <p className='section-text'>Hakemusten käsittely</p>
-                    </div>
-                    <div className='menu-section'>
+                    </a>
+                    <a className={'menu-section '  + (selected === 4 ? 'menu-section-selected' : '')} href='./Section_4'>
                         <b className='section-number'>4</b>
                         <p className='section-text'>Haastattelu</p>
-                    </div>
-                    <div className='menu-section'>
+                    </a>
+                    <a className={'menu-section '  + (selected === 5 ? 'menu-section-selected' : '')} href='./Section_5'>
                         <b className='section-number'>5</b>
                         <p className='section-text'>Sopimus</p>
-                    </div>
-                    <div className='menu-section'>
+                    </a>
+                    <a className={'menu-section '  + (selected === 6 ? 'menu-section-selected' : '')} href='./Section_6'>
                         <b className='section-number'>6</b>
                         <p className='section-text'>Perehdytys</p>
-                    </div>
+                    </a>
                 </div>
+                <a href="./Finished">
                     <FaCheck size='6rem' color='#98CC98'/>
-                    {/* <Button size='large' icon='1' type='primary' description='Osaamisen tarve' style={{ background: '#98CC98', fontSize: '300%', margin: '2rem' }} />
-                    <Button size='large' icon='2' description='Työpaikka-ilmoitus' style={{ background: '#98CC98', fontSize: '300%', margin: '2rem' }} /> */}
+                </a>
             </div>
         </div>
         </>

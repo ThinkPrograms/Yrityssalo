@@ -67,13 +67,12 @@ body, #root {
   padding-left: 1.5rem;
   margin: 2rem;
   margin-top: 1.2rem;
-  color: #F7F4F4;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.exclamation-bubble {
+.help-bubble {
   position: relative;
   bottom: 0.4rem;
   background-color: #4D82AA;
@@ -82,19 +81,9 @@ body, #root {
   font-size: 3rem;
   border-radius: 4rem;
   text-align: center;
+  font-weight: 700;
   margin: 0;
-}
-
-.question-bubble {
-  position: relative;
-  bottom: 0.4rem;
-  background-color: #4D82AA;
-  height: 4rem;
-  width: 4rem;
-  font-size: 3rem;
-  border-radius: 4rem;
-  text-align: center;
-  margin: 0;
+  color: #F7F4F4;
 }
 
 .explanation-text {

@@ -1,6 +1,7 @@
 .navbar {
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .title {
@@ -37,6 +38,7 @@
     flex-direction: column;
     justify-content:space-around;
     border-radius: 0.2rem;
+    text-decoration: none;
 }
 
 .menu-section-selected {

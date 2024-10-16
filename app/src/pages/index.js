@@ -1,5 +1,4 @@
 import '../css/Index.css'
-import { Button } from "antd";
 import bg from '../yrityssalo-kuva.png'
 
 const Index = () => {
@@ -25,25 +24,25 @@ const Index = () => {
                 <a href='./Section_1'>
                   <input type="button" className='menu-button' value='1'/>
                 </a>
-                <a href='./Section_1'>
+                <a href='./Section_2'>
                   <input type="button" className='menu-button' value='2'/>
                 </a>
-                <a href='./Section_1'>
+                <a href='./Section_3'>
                   <input type="button" className='menu-button' value='3'/>
                 </a>
-                <a href='./Section_1'>
+                <a href='./Section_4'>
                   <input type="button" className='menu-button' value='4'/>
                 </a>
-                <a href='./Section_1'>
+                <a href='./Section_5'>
                   <input type="button" className='menu-button' value='5'/>
                 </a>
-                <a href='./Section_1'>
+                <a href='./Section_6'>
                   <input type="button" className='menu-button' value='6'/>
                 </a>
               </div>
               <div className='menu-explanation'>
-                <p className='exclamation-bubble'>!</p>
-                <p className='question-bubble'>?</p>
+                <p className='help-bubble'>!</p>
+                <p className='help-bubble'>?</p>
                 <b className='explanation-text'>Vinkki- ja ohjenappien takaa löydät vinkkejä ja <br/>neuvoja, joita voit lisätä tulostettavalle muistilistalle.</b>
               </div>
           </div>
