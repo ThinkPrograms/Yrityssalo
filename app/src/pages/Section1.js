@@ -4,7 +4,7 @@ import '../css/Section.css';
 import bg from '../yrityssalo-form.png';
 import Input from '../components/Input';
 import Checkbox from '../components/Checkbox';
-import { MdOutlineContentCopy } from "react-icons/md";
+import { MdOutlineContentCopy, MdQuestionMark, MdPriorityHigh  } from "react-icons/md";
 import FormFooter from '../components/Form_Footer';
 
 const Section1 = () =>  {
@@ -38,10 +38,15 @@ const Section1 = () =>  {
       <div className="section">
         <div className="infobubbles">
           <div className="infobubble">
-            {/* icon here */}
-
+          <MdPriorityHigh />
             <div className="infobubble-text">
-              {/* text here */}
+              Ooga booga big text
+            </div>
+          </div>
+          <div className="infobubble">
+            <MdPriorityHigh />
+            <div className="infobubble-text">
+              Ooga booga big text
             </div>
           </div>
         </div>
@@ -81,7 +86,19 @@ const Section1 = () =>  {
         
         </div>
         <div className="infobubbles">
-          
+          <div className="infobubble">
+            <MdQuestionMark />
+            <div className="infobubble-text">
+              <h2>Ohje:</h2>
+              Onko täytettävä tehtävä kokonaan uusi tai jo olemassa oleva?
+            </div>
+          </div>
+          <div className="infobubble">
+            <MdQuestionMark />
+            <div className="infobubble-text">
+              Ooga booga big text
+            </div>
+          </div>
         </div>
       </div>
     </>

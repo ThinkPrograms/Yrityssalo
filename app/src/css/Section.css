@@ -226,3 +226,20 @@
     display: flex;
     justify-content: center;
 }
+
+/* info bubble css */
+.infobubbles {
+    margin-top: 15rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.infobubble {
+    display: flex;
+    flex-direction: row;
+    background-color: #4D82AA;
+    max-width: 15rem;
+    font-size: 1.2rem;
+    margin-inline: 5rem;
+}
