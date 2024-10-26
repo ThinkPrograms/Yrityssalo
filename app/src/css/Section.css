@@ -15,8 +15,8 @@
     background-color: #F7F4F4;
     margin-top: 15rem;
     /* Testing */
-    width: 50vw;
-    max-width: 60rem;
+
+    max-width: 50rem;
 }
 
 .form {
@@ -45,15 +45,36 @@
 .form-explanation {
     background-color: #98CC98;
     border-radius: 0.5rem;
-    height: 5vh;
-    padding: 1rem;
-    padding-left: 1.5rem;
+    height: 44px;
+    padding-block: 16px;
+    padding-left: 1rem;
     margin-inline: 6rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 3.5rem;
 }
+
+.help-bubble {
+    position: relative;
+    bottom: 0.4rem;
+    background-color: #4D82AA;
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    font-weight: 700;
+    margin: 0;
+    color: #F7F4F4;
+    line-height: 48px;
+  }
+
+  .explanation-text {
+    color: #F7F4F4;
+    padding-right: 16px;
+    font-size: 18px;
+  }
 
 .form-btns {
     display: flex;

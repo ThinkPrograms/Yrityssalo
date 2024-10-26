@@ -33,7 +33,7 @@ const Section1 = () =>  {
 
   return (
     <>
-      <Navbar selected={1}/>
+      <Navbar selected={1} title={"Osaamisen tarve"}/>
       <img className="bg-image" src={bg} alt="Failed to load" />
       <div className="section">
         <div className="infobubbles">

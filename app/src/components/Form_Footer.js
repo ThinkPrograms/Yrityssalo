@@ -22,7 +22,7 @@ const Form_Footer = ({ currentPage }) => {
         <div className='form-explanation'>
             <p className='help-bubble'>!</p>
             <p className='help-bubble'>?</p>
-            <b className='explanation-text'>Vinkki- ja ohjenappien takaa löydät vinkkejä ja <br/>neuvoja, joita voit lisätä tulostettavalle muistilistalle.</b>
+            <b className='explanation-text'>Vinkki- ja ohjenappien takaa löydät vinkkejä ja <br /> neuvoja, joita voit lisätä tulostettavalle muistilistalle.</b>
         </div>
         </>
     );

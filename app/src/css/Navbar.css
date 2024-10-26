@@ -16,17 +16,22 @@
 
 .menu {
     background-color: #F7F4F4;
+    padding-block: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-elems {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    justify-content: space-between;
+    width: 1240px;
 }
 
 .menu-sections {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .menu-section {
@@ -36,7 +41,7 @@
     color: #F7F4F4;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
     border-radius: 0.2rem;
     text-decoration: none;
 }
@@ -46,7 +51,7 @@
 }
 
 .menu-section ~ .menu-section {
-    margin-left: 5rem;
+    margin-left: 32px;
 }
 
 .section-number {

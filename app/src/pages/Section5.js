@@ -6,7 +6,7 @@ import FormFooter from '../components/Form_Footer';
 const Section5 = () =>  {
   return (
     <>
-      <Navbar selected={5}/>
+      <Navbar selected={5} title={"Sopimus"}/>
       <img className="bg-image" src={bg} alt="Failed to load" />
       <div className="section">
         <div className="section-form">

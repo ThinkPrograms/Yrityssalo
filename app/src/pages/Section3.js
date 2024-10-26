@@ -21,7 +21,7 @@ const Section3 = () =>  {
 
   return (
     <>
-      <Navbar selected={3}/>
+      <Navbar selected={3} title={"Hakemusten käsittely"}/>
       <img className="bg-image" src={bg} alt="Failed to load" />
       <div className="section">
         <div className="section-form">

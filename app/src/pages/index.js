@@ -41,9 +41,9 @@ const Index = () => {
                 </a>
               </div>
               <div className='menu-explanation'>
-                <p className='help-bubble'>!</p>
-                <p className='help-bubble'>?</p>
-                <b className='explanation-text'>Vinkki- ja ohjenappien takaa löydät vinkkejä ja <br/>neuvoja, joita voit lisätä tulostettavalle muistilistalle.</b>
+                <p className='help-bubble-menu'>!</p>
+                <p className='help-bubble-menu'>?</p>
+                <b className='explanation-text-menu'>Vinkki- ja ohjenappien takaa löydät vinkkejä ja <br/>neuvoja, joita voit lisätä tulostettavalle muistilistalle.</b>
               </div>
           </div>
         </header>

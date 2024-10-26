@@ -34,7 +34,7 @@ const Section4 = () =>  {
 
   return (
     <>
-      <Navbar selected={4}/>
+      <Navbar selected={4} title={"Haastattelu"}/>
       <img className="bg-image" src={bg} alt="Failed to load" />
       <div className="section">
         <div className="section-form">

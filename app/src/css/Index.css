@@ -21,6 +21,7 @@ body, #root {
   display: flex;
   margin-top: 3rem;
   margin-right: 8rem;
+  margin-bottom: 1rem;
   border-radius: 1rem;
   padding-right: 1rem;
   float: right;
@@ -60,7 +61,7 @@ body, #root {
 }
 
 .menu-explanation {
-  background-color: #98CC98;
+  /* background-color: #98CC98;
   border-radius: 0.5rem;
   height: 7%;
   padding: 1rem;
@@ -69,29 +70,38 @@ body, #root {
   margin-top: 1.2rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between; */
+  background-color: #98CC98;
+  border-radius: 0.5rem;
+  height: 56px;
+  padding-block: 16px;
+  padding-left: 1rem;
+  margin-inline: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 3.5rem;
 }
 
-.help-bubble {
+.help-bubble-menu {
   position: relative;
-  bottom: 0.4rem;
+  bottom: 0.3rem;
   background-color: #4D82AA;
   height: 4rem;
   width: 4rem;
   font-size: 3rem;
-  border-radius: 4rem;
+  border-radius: 2rem;
   text-align: center;
   font-weight: 700;
   margin: 0;
   color: #F7F4F4;
+  line-height: 56px;
 }
 
-.explanation-text {
+.explanation-text-menu {
   color: #F7F4F4;
-  padding-right: 4rem;
-  font-size: 1.3rem;
-  position: relative;
-  bottom: 0.3rem;
+  padding-right: 16px;
+  font-size: 22px;
 }
 
 .padding-0 {
