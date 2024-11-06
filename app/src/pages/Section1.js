@@ -37,17 +37,17 @@ const Section1 = () =>  {
       <img className="bg-image" src={bg} alt="Failed to load" />
       <div className="section">
         <div className="infobubbles">
-          <div className="infobubble">
-          <MdPriorityHigh />
+          <div className="infobubble bubble-left" style={{ position: "relative", top: "2rem"}}>
             <div className="infobubble-text">
               Ooga booga big text
             </div>
+            <MdPriorityHigh className="infobubble-icon"/>
           </div>
-          <div className="infobubble">
-            <MdPriorityHigh />
+          <div className="infobubble bubble-left" style={{ position: "relative", top: "4rem"}}>
             <div className="infobubble-text">
               Ooga booga big text
             </div>
+            <MdPriorityHigh className="infobubble-icon"/>
           </div>
         </div>
         <div className="section-form">
@@ -86,15 +86,15 @@ const Section1 = () =>  {
         
         </div>
         <div className="infobubbles">
-          <div className="infobubble">
-            <MdQuestionMark />
+          <div className="infobubble bubble-right" style={{ position: "relative", top: "2rem"}}>
+            <MdQuestionMark className="infobubble-icon"/>
             <div className="infobubble-text">
-              <h2>Ohje:</h2>
+              <h2 className="infobubble-title">Ohje:</h2>
               Onko täytettävä tehtävä kokonaan uusi tai jo olemassa oleva?
             </div>
           </div>
-          <div className="infobubble">
-            <MdQuestionMark />
+          <div className="infobubble bubble-right" style={{ position: "relative", top: "4rem"}}>
+            <MdQuestionMark className="infobubble-icon"/>
             <div className="infobubble-text">
               Ooga booga big text
             </div>
