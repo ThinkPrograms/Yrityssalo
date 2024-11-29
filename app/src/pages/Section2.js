@@ -10,6 +10,8 @@ import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { FaArrowRightLong } from "react-icons/fa6";
+import HelpBubble from "../components/Helpbubble";
+import InfoBubble from "../components/Infobubble";
 
 const Section2 = () =>  {
   const [selectedBox, setCheckedBox] = useState(101);
@@ -48,12 +50,15 @@ const Section2 = () =>  {
       <img className="bg-image" src={bg} alt="Failed to load" />
       <div className="section">
       
+        <div className="infobubbles">
+          <InfoBubble Yposition={7} text={<p>Olethan muistanut jakaa ilmoitustasi sosiaalisessa mediassa. <br /><br /><b>Facebook</b><b>Instagram</b><b>Twitter</b></p>}/>
+          <InfoBubble Yposition={48} text={<p>Esittele yrityksesi toimintaa lyhyesti. Tiivistä asiat, jotka saattavat kiinnostaa hakijoitasi. <br /><br />Kerro mitä yrityksesi tarjoaa hakijalle.</p>}/>
+          <InfoBubble Yposition={52.5} text={<p>Anna tehtävänimikkeeksi mahdollisimman selkeä ja kuvaava nimi.</p>}/>
+          <InfoBubble Yposition={52.5} text={<p>Anna mahdollisimman selkeä kuvaus työn sisällöstä. <br /><br />Älä jaarittele, pidä tekstilohkot lyhyinä.</p>}/>
+          <InfoBubble Yposition={52.5} text={<p>Muista mainita mikäli otat vastaan video CV:itä</p>}/>
+          <InfoBubble Yposition={52.5} text={<p>Kuvalliset ilmoitukset saavat enemmän huomiota. <br /><br />Valitse sellainen kuva, joka vahvistaa yrityskuvaasi. <br /><br />Videon tekeminen kannattaa, jos sinulla on siihen resursseja.</p>}/>
+        </div>
         <div className="section-form">
-          {/* Question -marks here */}
-
-          {/* Exclamation -marks here */}
-
-          {/* Form questions and inputs */}
           <div className="form">
             <p className="form-question">Suosituimmat työpaikkojen hakukoneet:</p>
             <div className="form-links">
@@ -116,8 +121,12 @@ const Section2 = () =>  {
              <img className='mediaImage' src={mediaGuide} alt="Failed to load" />
             </div>
           </div>
-          {/* Previous and next buttons and guidance text thing */}
           <FormFooter currentPage={2}/>
+        </div>
+        <div className="infobubbles">
+          <HelpBubble Yposition={6.5} text={<p>Valitsemalla toisen sijaintivaihtoehdon, saat auki tarkentavia kenttiä.</p>}/>
+          <HelpBubble Yposition={52.5} text={<p>Kerro mitä odotat työnhakijalta: <br />- osaaminen <br />- työkokemus <br />- koulutus  <br />- muut vaatimukset (esim. lupakortit) <br /><br />Erittele mitä vaadit ja mitä katsot eduksi. </p>}/>
+          <HelpBubble Yposition={61.5} text={<p>Mistä mihin asti ilmoituksesi on esillä.</p>}/>
         </div>
         
       </div>

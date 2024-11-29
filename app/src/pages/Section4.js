@@ -7,6 +7,8 @@ import Select from '../components/Select';
 import { useState } from "react";
 import { MdOutlineContentCopy } from "react-icons/md";
 import FormFooter from '../components/Form_Footer';
+import HelpBubble from "../components/Helpbubble";
+import InfoBubble from "../components/Infobubble";
 
 const Section4 = () =>  {
   const [value, setValue] = useState('');
@@ -37,12 +39,10 @@ const Section4 = () =>  {
       <Navbar selected={4} title={"Haastattelu"}/>
       <img className="bg-image" src={bg} alt="Failed to load" />
       <div className="section">
+        <div className="infobubbles">
+          <InfoBubble Yposition={7} text={<p>Päätä tärkeimmät kysymykset, jotka tulee kysyttyä jokaiselta, vaikka itse haastattelut kulkisivat eri tavoilla.</p>}/>
+        </div>
         <div className="section-form">
-          {/* Question -marks here */}
-
-          {/* Exclamation -marks here */}
-
-          {/* Form questions and inputs */}
           <div className="form">
 
           <Select
@@ -69,6 +69,9 @@ const Section4 = () =>  {
           </div>
           {/* Previous and next buttons and guidance text thing */}
           <FormFooter currentPage={4}/>
+        </div>
+        <div className="infobubbles">
+          <HelpBubble Yposition={61.5} text={<p>Kehitä kysymyksiä, jotka luovat keskustelua. (Vältä kyllä ja ei vastauksia) <br /><br />Voit kopioida esimerkkivastauksen itsellesi.</p>}/>
         </div>
       </div>
     </>

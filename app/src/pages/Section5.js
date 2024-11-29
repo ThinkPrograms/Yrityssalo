@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import '../css/Section.css'
 import bg from '../yrityssalo-form.png';
 import FormFooter from '../components/Form_Footer';
+import InfoBubble from "../components/Infobubble";
 
 const Section5 = () =>  {
   return (
@@ -9,12 +10,10 @@ const Section5 = () =>  {
       <Navbar selected={5} title={"Sopimus"}/>
       <img className="bg-image" src={bg} alt="Failed to load" />
       <div className="section">
+        <div className="infobubbles">
+          <InfoBubble Yposition={7} text={<p>Sopimuspohjana voit käyttää vaikka seuraavaa työsuojelu.fi löytyvää pohjaa: <br /><br /><b>Sopimuspohja</b></p>}/>
+        </div>
         <div className="section-form">
-          {/* Question -marks here */}
-
-          {/* Exclamation -marks here */}
-
-          {/* Form questions and inputs */}
           <div className="form">
             <p className="form-question">
               Työsopimus voi olla kirjallinen, suullinen tai sähköinen.

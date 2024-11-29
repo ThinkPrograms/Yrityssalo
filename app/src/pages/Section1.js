@@ -4,8 +4,10 @@ import '../css/Section.css';
 import bg from '../yrityssalo-form.png';
 import Input from '../components/Input';
 import Checkbox from '../components/Checkbox';
-import { MdOutlineContentCopy, MdQuestionMark, MdPriorityHigh  } from "react-icons/md";
+import { MdOutlineContentCopy } from "react-icons/md";
 import FormFooter from '../components/Form_Footer';
+import HelpBubble from "../components/Helpbubble";
+import InfoBubble from "../components/Infobubble";
 
 const Section1 = () =>  {
   const [selectedBox, setCheckedBox] = useState(101);
@@ -37,18 +39,9 @@ const Section1 = () =>  {
       <img className="bg-image" src={bg} alt="Failed to load" />
       <div className="section">
         <div className="infobubbles">
-          <div className="infobubble bubble-left" style={{ position: "relative", top: "2rem"}}>
-            <div className="infobubble-text">
-              Ooga booga big text
-            </div>
-            <MdPriorityHigh className="infobubble-icon"/>
-          </div>
-          <div className="infobubble bubble-left" style={{ position: "relative", top: "4rem"}}>
-            <div className="infobubble-text">
-              Ooga booga big text
-            </div>
-            <MdPriorityHigh className="infobubble-icon"/>
-          </div>
+          <InfoBubble Yposition={7} text={<p>Tekijän löytäminen on helpompaa kun tiedät, mitä tarvitset. <br /><br />Virherekrytointi on suurin vältettävissä oleva menoerä.</p>}/>
+          <InfoBubble Yposition={48} text={<p>Varaa rekrytointiin tarpeeksi aikaa. <br /><br />Pidä aikataulusta kiinni. <br /><br />Yleensä pienyrittäjän rekrytointiin kuluu aikaa n. kuukausi, josta työaikaa on n. 2-5 kokonaista työpäivää.</p>}/>
+          <InfoBubble Yposition={52.5} text={<p>Vastavalmistunut tai vastaava on aluksi halvempi palkattava, tosin perehdytys vie alkuun siivun tuottavuudesta. <br /><br />Kokenut osaaja taas voi tuoda yritykselle suurempia tuloja nopeammin, mutta on kalliimpi palkattava</p>}/>
         </div>
         <div className="section-form">
           <div className="form">
@@ -86,19 +79,9 @@ const Section1 = () =>  {
         
         </div>
         <div className="infobubbles">
-          <div className="infobubble bubble-right" style={{ position: "relative", top: "2rem"}}>
-            <MdQuestionMark className="infobubble-icon"/>
-            <div className="infobubble-text">
-              <h2 className="infobubble-title">Ohje:</h2>
-              Onko täytettävä tehtävä kokonaan uusi tai jo olemassa oleva?
-            </div>
-          </div>
-          <div className="infobubble bubble-right" style={{ position: "relative", top: "4rem"}}>
-            <MdQuestionMark className="infobubble-icon"/>
-            <div className="infobubble-text">
-              Ooga booga big text
-            </div>
-          </div>
+          <HelpBubble Yposition={6.5} text={<p>Onko täytettävä tehtävä kokonaan uusi tai jo olemassa oleva?</p>}/>
+          <HelpBubble Yposition={52.5} text={<p>Mieti eri vaiheet ja kuka vastaa mistäkin vaiheesta<br/><br/>Voit kopioida esimerkkivastauksen itsellesi.</p>}/>
+          <HelpBubble Yposition={61.5} text={<p>Linkin takaa löydät palkkalaskurin, jolla pystyt arvioimaan palkkakuluja.<br /><br /><b>Palkkalaskuri</b> <br /><br />Voit kopioida esimerkkivastauksen itsellesi.</p>}/>
         </div>
       </div>
     </>

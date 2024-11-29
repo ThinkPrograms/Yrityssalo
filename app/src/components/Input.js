@@ -1,8 +1,4 @@
-const Input = ({ question, rowsVal, value, onChange }) => {
-    if (rowsVal === undefined) {
-        console.log('ooga booga ohohoho')
-        rowsVal = 9; // default
-    }
+const Input = ({ question, rowsVal = 9, value, onChange }) => {
     return (
         <>
             <p className="form-question">{question}</p>
