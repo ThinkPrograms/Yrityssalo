@@ -39,7 +39,7 @@ const Navbar = ({ selected, title }) => {
                         </a>
                     </div>
                     <a href="./Finished">
-                        <FaCheck size='6rem' color='#98CC98'/>
+                        <FaCheck size='6rem' color={selected === 7 ? '#4D82AA' : '#98CC98'}/>
                     </a>
                 </div>
             </div>

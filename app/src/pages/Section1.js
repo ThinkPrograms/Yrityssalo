@@ -1,10 +1,11 @@
 import { useState } from "react";
-import Navbar from "../components/Navbar";
+import { MdOutlineContentCopy } from "react-icons/md";
+
 import '../css/Section.css';
 import bg from '../yrityssalo-form.png';
+import Navbar from "../components/Navbar";
 import Input from '../components/Input';
 import Checkbox from '../components/Checkbox';
-import { MdOutlineContentCopy } from "react-icons/md";
 import FormFooter from '../components/Form_Footer';
 import HelpBubble from "../components/Helpbubble";
 import InfoBubble from "../components/Infobubble";

@@ -35,46 +35,46 @@ const Section4 = () =>  {
   }
 
   return (
-    <>
-      <Navbar selected={4} title={"Haastattelu"}/>
-      <img className="bg-image" src={bg} alt="Failed to load" />
-      <div className="section">
-        <div className="infobubbles">
-          <InfoBubble Yposition={7} text={<p>Päätä tärkeimmät kysymykset, jotka tulee kysyttyä jokaiselta, vaikka itse haastattelut kulkisivat eri tavoilla.</p>}/>
-        </div>
-        <div className="section-form">
-          <div className="form">
-
-          <Select
-            label="Haastattelutyyppi: "
-            options={options}
-            value={value}
-            onChange={handleChange}
-          />
-
-            <Input question='Suunnittele haastattelurunko:'/>
-            <div className="form-checkbox-group">
-              <Checkbox value={checked} onChange={handleChangeBox} label='Esimerkki kysymyksiä:'/>
-            </div>
-
-            { checked && 
-              <div className="help-section">
-                <MdOutlineContentCopy className="clipboard-icon" onClick={CopyToClipboard} />
-                <p className="help-text display-linebreak">
-                  {text}
-                </p>
-              </div>
-            }
-
+      <>
+        <Navbar selected={4} title={"Haastattelu"}/>
+        <img className="bg-image" src={bg} alt="Failed to load" />
+        <div className="section">
+          <div className="infobubbles">
+            <InfoBubble Yposition={12} text={<p>Päätä tärkeimmät kysymykset, jotka tulee kysyttyä jokaiselta, vaikka itse haastattelut kulkisivat eri tavoilla.</p>}/>
           </div>
-          {/* Previous and next buttons and guidance text thing */}
-          <FormFooter currentPage={4}/>
+          <div className="section-form">
+            <div className="form">
+
+            <Select
+              label="Haastattelutyyppi: "
+              options={options}
+              value={value}
+              onChange={handleChange}
+            />
+
+              <Input question='Suunnittele haastattelurunko:'/>
+              <div className="form-checkbox-group">
+                <Checkbox value={checked} onChange={handleChangeBox} label='Esimerkki kysymyksiä:'/>
+              </div>
+
+              { checked && 
+                <div className="help-section">
+                  <MdOutlineContentCopy className="clipboard-icon" onClick={CopyToClipboard} />
+                  <p className="help-text display-linebreak">
+                    {text}
+                  </p>
+                </div>
+              }
+
+            </div>
+            {/* Previous and next buttons and guidance text thing */}
+            <FormFooter currentPage={4}/>
+          </div>
+          <div className="infobubbles">
+            <HelpBubble Yposition={12} text={<p>Kehitä kysymyksiä, jotka luovat keskustelua. (Vältä kyllä ja ei vastauksia) <br /><br />Voit kopioida esimerkkivastauksen itsellesi.</p>}/>
+          </div>
         </div>
-        <div className="infobubbles">
-          <HelpBubble Yposition={61.5} text={<p>Kehitä kysymyksiä, jotka luovat keskustelua. (Vältä kyllä ja ei vastauksia) <br /><br />Voit kopioida esimerkkivastauksen itsellesi.</p>}/>
-        </div>
-      </div>
-    </>
+      </>
   );
 }
 

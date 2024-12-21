@@ -28,7 +28,7 @@ const Section3 = () =>  {
       <div className="section">
         <div className="infobubbles">
           <InfoBubble Yposition={7} text={<p>Yrityskuvan kannalta on hyvä vastata kaikille hakijoille.</p>}/>
-          <InfoBubble Yposition={48} text={<p>Yrityskuvan kannalta on kannattavaa luoda hyvä hakijakokemus: <br /><br />- Ole täsmällinen. <br />- Arvosta hakemuksia. <br />- Ole kohtelias.</p>}/>
+          <InfoBubble Yposition={18} text={<p>Yrityskuvan kannalta on kannattavaa luoda hyvä hakijakokemus: <br /><br />- Ole täsmällinen. <br />- Arvosta hakemuksia. <br />- Ole kohtelias.</p>}/>
         </div>
         <div className="section-form">
           <div className="form">
@@ -57,8 +57,8 @@ const Section3 = () =>  {
         </div>
         <div className="infobubbles">
           <HelpBubble Yposition={6.5} text={<p>Varmista että sinulla on aikaa hakijoiden yhteydenotoille. <br /><br />Anna mahdollisimman joustava aikahaarukka koska olet tavoitettavissa ja huolehdi, että pidät siitä kiinni.</p>}/>
-          <HelpBubble Yposition={52.5} text={<p>Kerro haastateltavalle kenet hän tapaa, missä ja koska. <br /><br />Kerro myös mitä hänen tulee ottaa mukaan haastatteluun. (esim. todistukset) <br /><br />Voit kopioida esimerkkivastauksen itsellesi.</p>}/>
-          <HelpBubble Yposition={61.5} text={<p>Voit kopioida esimerkkivastauksen itsellesi.</p>}/>
+          <HelpBubble Yposition={8} text={<p>Kerro haastateltavalle kenet hän tapaa, missä ja koska. <br /><br />Kerro myös mitä hänen tulee ottaa mukaan haastatteluun. (esim. todistukset) <br /><br />Voit kopioida esimerkkivastauksen itsellesi.</p>}/>
+          <HelpBubble Yposition={9} text={<p>Voit kopioida esimerkkivastauksen itsellesi.</p>}/>
         </div>
       </div>
     </>

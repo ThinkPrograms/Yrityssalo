@@ -51,16 +51,16 @@ const Section2 = () =>  {
       <div className="section">
       
         <div className="infobubbles">
-          <InfoBubble Yposition={7} text={<p>Olethan muistanut jakaa ilmoitustasi sosiaalisessa mediassa. <br /><br /><b>Facebook</b><b>Instagram</b><b>Twitter</b></p>}/>
-          <InfoBubble Yposition={48} text={<p>Esittele yrityksesi toimintaa lyhyesti. Tiivistä asiat, jotka saattavat kiinnostaa hakijoitasi. <br /><br />Kerro mitä yrityksesi tarjoaa hakijalle.</p>}/>
-          <InfoBubble Yposition={52.5} text={<p>Anna tehtävänimikkeeksi mahdollisimman selkeä ja kuvaava nimi.</p>}/>
-          <InfoBubble Yposition={52.5} text={<p>Anna mahdollisimman selkeä kuvaus työn sisällöstä. <br /><br />Älä jaarittele, pidä tekstilohkot lyhyinä.</p>}/>
-          <InfoBubble Yposition={52.5} text={<p>Muista mainita mikäli otat vastaan video CV:itä</p>}/>
-          <InfoBubble Yposition={52.5} text={<p>Kuvalliset ilmoitukset saavat enemmän huomiota. <br /><br />Valitse sellainen kuva, joka vahvistaa yrityskuvaasi. <br /><br />Videon tekeminen kannattaa, jos sinulla on siihen resursseja.</p>}/>
+          <InfoBubble Yposition={6} text={<p>Olethan muistanut jakaa ilmoitustasi sosiaalisessa mediassa. <br /><br /><b>Facebook <br />Instagram <br />Twitter</b></p>}/>
+          <InfoBubble Yposition={16} text={<p>Esittele yrityksesi toimintaa lyhyesti. Tiivistä asiat, jotka saattavat kiinnostaa hakijoitasi. <br /><br />Kerro mitä yrityksesi tarjoaa hakijalle.</p>}/>
+          <InfoBubble Yposition={38} text={<p>Anna tehtävänimikkeeksi mahdollisimman selkeä ja kuvaava nimi.</p>}/>
+          <InfoBubble Yposition={39} text={<p>Anna mahdollisimman selkeä kuvaus työn sisällöstä. <br /><br />Älä jaarittele, pidä tekstilohkot lyhyinä.</p>}/>
+          <InfoBubble Yposition={60} text={<p>Muista mainita mikäli otat vastaan video CV:itä</p>}/>
+          <InfoBubble Yposition={93} text={<p>Kuvalliset ilmoitukset saavat enemmän huomiota. <br /><br />Valitse sellainen kuva, joka vahvistaa yrityskuvaasi. <br /><br />Videon tekeminen kannattaa, jos sinulla on siihen resursseja.</p>}/>
         </div>
         <div className="section-form">
           <div className="form">
-            <p className="form-question">Suosituimmat työpaikkojen hakukoneet:</p>
+            <p className="form-question noPadding">Suosituimmat työpaikkojen hakukoneet:</p>
             <div className="form-links">
               <div><a href="https://paikat.te-palvelut.fi/tpt/" className="form-link">TE-palvelut</a></div>
               <div><a href="https://duunitori.fi/" className="form-link">Duunitori</a></div>
@@ -124,11 +124,10 @@ const Section2 = () =>  {
           <FormFooter currentPage={2}/>
         </div>
         <div className="infobubbles">
-          <HelpBubble Yposition={6.5} text={<p>Valitsemalla toisen sijaintivaihtoehdon, saat auki tarkentavia kenttiä.</p>}/>
-          <HelpBubble Yposition={52.5} text={<p>Kerro mitä odotat työnhakijalta: <br />- osaaminen <br />- työkokemus <br />- koulutus  <br />- muut vaatimukset (esim. lupakortit) <br /><br />Erittele mitä vaadit ja mitä katsot eduksi. </p>}/>
-          <HelpBubble Yposition={61.5} text={<p>Mistä mihin asti ilmoituksesi on esillä.</p>}/>
+          <HelpBubble Yposition={13} text={<p>Valitsemalla toisen sijaintivaihtoehdon, saat auki tarkentavia kenttiä.</p>}/>
+          <HelpBubble Yposition={75} text={<p>Kerro mitä odotat työnhakijalta: <br />- osaaminen <br />- työkokemus <br />- koulutus  <br />- muut vaatimukset (esim. lupakortit) <br /><br />Erittele mitä vaadit ja mitä katsot eduksi. </p>}/>
+          <HelpBubble Yposition={98} text={<p>Mistä mihin asti ilmoituksesi on esillä.</p>}/>
         </div>
-        
       </div>
     </>
   );
