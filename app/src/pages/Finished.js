@@ -20,10 +20,39 @@ const Finished = () =>  {
     }
   });
 
-  console.log(data)
-  console.log(data.julkaisuaika_alku)
-
-  const text = data.osaaminen
+  const Pages = 
+    <>
+      {/* 1. Osaamisen tarve */}
+      <Page size="A4" style={styles.page} wrap={true}>
+        <View style={styles.section}>
+          <Text></Text>
+        </View>
+      </Page>
+      {/* 2. työpaikkailmoitus */}
+      <Page size="A4" style={styles.page}>
+        <View style={styles.section}>
+          <Text></Text>
+        </View>
+      </Page>
+      {/* 3. Hakemusten käsittely */}
+      <Page size="A4" style={styles.page}>
+        <View style={styles.section}>
+          <Text></Text>
+        </View>
+      </Page>
+      {/* 4. Haastattelu */}
+      <Page size="A4" style={styles.page}>
+        <View style={styles.section}>
+          <Text></Text>
+        </View>
+      </Page>
+    {/* Muistilista */}
+      <Page size="A4" style={styles.page}>
+        <View style={styles.section}>
+          <Text></Text>
+        </View>
+      </Page>
+    </>
     return (
       <>
         <img className="bg-image" style={{backgroundColor: '#676767'}} alt="Failed to load" />
@@ -31,16 +60,7 @@ const Finished = () =>  {
         <div className="form-finished">
           <PDFViewer width={800} height={1200}>
             <Document>
-              <Page size="A4" style={styles.page} wrap={true}>
-                <View style={styles.section}>
-                  <Text>{text}</Text>
-                </View>
-              </Page>
-              <Page size="A4" style={styles.page}>
-                <View style={styles.section}>
-                  <Text>{text}</Text>
-                </View>
-              </Page>
+              {Pages}
             </Document>
           </PDFViewer>
           </div>
