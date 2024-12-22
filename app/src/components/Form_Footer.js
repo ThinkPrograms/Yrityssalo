@@ -1,21 +1,23 @@
-const Form_Footer = ({ currentPage }) => {
-    let prevPage = '/';
-    let nextPage = './Finished';
-    // Get the previous and next page numbers
-    if (currentPage !== 1 && currentPage !== undefined) {
-        prevPage = "./Section_" + (currentPage - 1).toString()
-    }
-    if (currentPage !== 6 && currentPage !== undefined) {
-        nextPage = "./Section_" + (currentPage + 1).toString()
+import useFormContext from "../hooks/useFormContext";
+
+const Form_Footer = () => {
+    const {
+        page, 
+        setPage,
+    } = useFormContext()
+
+    const ChangePage = (newPage) => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+        setPage(newPage);
     }
 
     return (
         <>
         <div className="form-btns">
-            <a className="no-decoration" href={prevPage}>
+            <a className="no-decoration" onClick={() => ChangePage(page - 1)}>
               <p className="form-btn">Edellinen</p>
             </a>
-            <a className="no-decoration" href={nextPage}>
+            <a className="no-decoration" onClick={() => ChangePage(page + 1)}>
               <p className="form-btn">Seuraava</p>
             </a>
         </div>

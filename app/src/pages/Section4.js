@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import '../css/Section.css'
 import bg from '../yrityssalo-form.png';
 import Checkbox from '../components/Checkbox';
@@ -36,7 +35,6 @@ const Section4 = () =>  {
 
   return (
       <>
-        <Navbar selected={4} title={"Haastattelu"}/>
         <img className="bg-image" src={bg} alt="Failed to load" />
         <div className="section">
           <div className="infobubbles">
@@ -68,7 +66,7 @@ const Section4 = () =>  {
 
             </div>
             {/* Previous and next buttons and guidance text thing */}
-            <FormFooter currentPage={4}/>
+            <FormFooter/>
           </div>
           <div className="infobubbles">
             <HelpBubble Yposition={12} text={<p>Kehitä kysymyksiä, jotka luovat keskustelua. (Vältä kyllä ja ei vastauksia) <br /><br />Voit kopioida esimerkkivastauksen itsellesi.</p>}/>

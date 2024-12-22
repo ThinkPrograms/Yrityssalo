@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import '../css/Section.css'
 import bg from '../yrityssalo-form.png';
 import mediaGuide from '../MediaGuide.png';
@@ -46,7 +45,6 @@ const Section2 = () =>  {
 
   return (
     <>
-      <Navbar selected={2} title={"Työpaikkailmoitus"}/>
       <img className="bg-image" src={bg} alt="Failed to load" />
       <div className="section">
       
@@ -121,7 +119,7 @@ const Section2 = () =>  {
              <img className='mediaImage' src={mediaGuide} alt="Failed to load" />
             </div>
           </div>
-          <FormFooter currentPage={2}/>
+          <FormFooter/>
         </div>
         <div className="infobubbles">
           <HelpBubble Yposition={13} text={<p>Valitsemalla toisen sijaintivaihtoehdon, saat auki tarkentavia kenttiä.</p>}/>

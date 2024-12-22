@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import '../css/Section.css'
 import bg from '../yrityssalo-form.png';
 import FormFooter from '../components/Form_Footer';
@@ -7,7 +6,6 @@ import InfoBubble from "../components/Infobubble";
 const Section5 = () =>  {
   return (
     <>
-      <Navbar selected={5} title={"Sopimus"}/>
       <img className="bg-image" src={bg} alt="Failed to load" />
       <div className="section">
         <div className="infobubbles">
@@ -42,7 +40,7 @@ const Section5 = () =>  {
               </b>
             </div>
             {/* Previous and next buttons and guidance text thing */}
-            <FormFooter currentPage={5}/>
+            <FormFooter/>
           </div>
           <label style={{width: '23rem'}}></label>
         </div>

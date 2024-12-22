@@ -21,22 +21,22 @@ const Index = () => {
               </div>
             </div>
               <div className='menu-buttons'>
-                <a href='./Section_1'>
+                <a href='./form'>
                   <input type="button" className='menu-button' value='1'/>
                 </a>
-                <a href='./Section_2'>
+                <a href='./form'>
                   <input type="button" className='menu-button' value='2'/>
                 </a>
-                <a href='./Section_3'>
+                <a href='./form'>
                   <input type="button" className='menu-button' value='3'/>
                 </a>
-                <a href='./Section_4'>
+                <a href='./form'>
                   <input type="button" className='menu-button' value='4'/>
                 </a>
-                <a href='./Section_5'>
+                <a href='./form'>
                   <input type="button" className='menu-button' value='5'/>
                 </a>
-                <a href='./Section_6'>
+                <a href='./form'>
                   <input type="button" className='menu-button' value='6'/>
                 </a>
               </div>

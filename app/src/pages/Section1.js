@@ -3,16 +3,18 @@ import { MdOutlineContentCopy } from "react-icons/md";
 
 import '../css/Section.css';
 import bg from '../yrityssalo-form.png';
-import Navbar from "../components/Navbar";
 import Input from '../components/Input';
 import Checkbox from '../components/Checkbox';
 import FormFooter from '../components/Form_Footer';
 import HelpBubble from "../components/Helpbubble";
 import InfoBubble from "../components/Infobubble";
+import useFormContext from '../hooks/useFormContext'
 
-const Section1 = () =>  {
+const Section1 = (page) =>  {
   const [selectedBox, setCheckedBox] = useState(101);
   const [checked, setChecked] = useState(false);
+
+  const { data, handleDataChange } = useFormContext()
 
   const handleChange = (val) => {
     setCheckedBox(val);
@@ -36,7 +38,6 @@ const Section1 = () =>  {
 
   return (
     <>
-      <Navbar selected={1} title={"Osaamisen tarve"}/>
       <img className="bg-image" src={bg} alt="Failed to load" />
       <div className="section">
         <div className="infobubbles">
@@ -46,8 +47,8 @@ const Section1 = () =>  {
         </div>
         <div className="section-form">
           <div className="form">
-            <Input question='Mieti, millaista osaamista yrityksesi tarvitsee nyt ja tulevaisuudessa:'/>
-            <Input question='Pohdi yrityksen lyhyen ja pitkän aikavälin tavoitteet:'/>
+            <Input question='Mieti, millaista osaamista yrityksesi tarvitsee nyt ja tulevaisuudessa:' />
+            <Input question='Pohdi yrityksen lyhyen ja pitkän aikavälin tavoitteet:' />
 
             <div className="form-checkbox-group">
                 <Checkbox value={selectedBox === 101} onChange={() => handleChange(101)} label='Esimerkki A'/>
@@ -76,7 +77,7 @@ const Section1 = () =>  {
 
             <Input question='Arvioi budjetti rekrytoinnille:'/>
           </div>
-          <FormFooter currentPage={1}/>
+          <FormFooter/>
         
         </div>
         <div className="infobubbles">

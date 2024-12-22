@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import '../css/Section.css'
 import bg from '../yrityssalo-form.png';
 import FormFooter from '../components/Form_Footer';
@@ -8,7 +7,6 @@ import InfoBubble from "../components/Infobubble";
 const Section6 = () =>  {
   return (
       <>
-        <Navbar selected={6} title={"Perehdytys"}/>
         <img className="bg-image" src={bg} alt="Failed to load" />
         <div className="section">
           <div className="infobubbles">
@@ -22,7 +20,7 @@ const Section6 = () =>  {
               <b className="form-question noPadding">Säästät vaivaa tulevaisuudessa, tekemällä perehdytyskansion jo ensimmäisen rekrytoinnin kohdalla.</b>
             </div>
             {/* Previous and next buttons and guidance text thing */}
-            <FormFooter currentPage={6}/>
+            <FormFooter/>
           </div>
           <div className="infobubbles">
             <HelpBubble Yposition={7} text={<p>Mieti kuka vastaa perehdytyksestä</p>}/>

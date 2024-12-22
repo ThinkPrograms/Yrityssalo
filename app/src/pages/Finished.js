@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import '../css/Section.css'
 
 import { Page, Text, View, Document, StyleSheet, PDFViewer } from '@react-pdf/renderer';
@@ -21,7 +20,6 @@ const Finished = () =>  {
 
     return (
       <>
-        <Navbar selected={7} title={"LOPPUTULOSTE"}/>
         <img className="bg-image" style={{backgroundColor: '#676767'}} alt="Failed to load" />
         
         <div className="form-finished">
@@ -41,8 +39,8 @@ const Finished = () =>  {
           </PDFViewer>
           </div>
           <div className="form-btns">
-                <a className="no-decoration" href='./Section_6'>
-                  <p className="form-btn" style={{marginLeft: '0'}}>Edellinen</p>
+                <a className="no-decoration" href='./'>
+                  <p className="form-btn" style={{marginLeft: '0'}}>Alkuun</p>
                 </a>
             </div>
 
