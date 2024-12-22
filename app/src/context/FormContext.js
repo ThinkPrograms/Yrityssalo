@@ -17,6 +17,7 @@ export const FormProvider = ({children}) => {
     const [page, setPage] = useState(0)
     
     useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         if (page < 0) {
             window.location.replace(window.location.origin);
         }
@@ -28,6 +29,7 @@ export const FormProvider = ({children}) => {
         aikataulu: "",
         budjetti: "",
         yritys_sijainti: "",
+        tyopaikka_tiedot: "",
         tyopaikka_sijainti: "",
         yritys_kuvaus: "",
         tyosopimus_tyyppi: "",
@@ -37,8 +39,8 @@ export const FormProvider = ({children}) => {
         ilmj_nimi: "",
         ilmj_puhelin: "",
         ilmj_sahkoposti: "",
-        julkaisuaika_alku: "",
-        julkaisuaika_loppu: "",
+        julkaisuaika_alku: new Date(),
+        julkaisuaika_loppu: new Date(),
         yhteyshenkilo_yhteystiedot: "",
         tavoitettavissa: "",
         vastausaika: "",
@@ -48,6 +50,18 @@ export const FormProvider = ({children}) => {
         haastattelurunko: "",
         muistilista: [],
       })
+
+      const handleDateChange_start = (e) => {
+        setData(prevData => ({
+            ...prevData, julkaisuaika_alku: e
+        }))
+      }
+
+      const handleDateChange_end = (e) => {
+        setData(prevData => ({
+            ...prevData, julkaisuaika_loppu: e
+        }))
+      }
 
       const handleDataChange = e => {
         const type = e.target.type
@@ -60,7 +74,7 @@ export const FormProvider = ({children}) => {
       }
 
     return (
-        <FormContext.Provider value={{title, page, setPage, data, setData}}>
+        <FormContext.Provider value={{title, page, setPage, data, setData, handleDataChange, handleDateChange_start, handleDateChange_end}}>
             {children}
         </FormContext.Provider>
     )

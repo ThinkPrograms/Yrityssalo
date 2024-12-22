@@ -7,7 +7,6 @@ const Form_Footer = () => {
     } = useFormContext()
 
     const ChangePage = (newPage) => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         setPage(newPage);
     }
 

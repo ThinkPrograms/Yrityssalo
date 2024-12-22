@@ -1,6 +1,5 @@
 import { MdPriorityHigh  } from "react-icons/md";
 import { useState } from "react";
-import Checkbox from '../components/Checkbox';
 
 const InfoBubble = ({ Yposition, text, value, onChange }) => {
 
@@ -19,7 +18,7 @@ const InfoBubble = ({ Yposition, text, value, onChange }) => {
 
             <label className="form-checkbox">
               <input type="checkbox" checked={selectedBox === true} onChange={handleChange} />
-              <span class="checkmark" style={{height: '1.8rem', width: '1.8rem'}}></span>
+              <span className="checkmark" style={{height: '1.8rem', width: '1.8rem'}}></span>
               <p id="checkbox-text" style={{color: "white", fontSize: '1rem', bottom: '0.95rem', lineHeight: '0.9rem', paddingLeft: '0.3rem'}}>Lisää vinkki<br />muistilistaan</p>
             </label>
 

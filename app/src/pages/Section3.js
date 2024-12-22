@@ -7,10 +7,13 @@ import { MdOutlineContentCopy } from "react-icons/md";
 import FormFooter from '../components/Form_Footer';
 import HelpBubble from "../components/Helpbubble";
 import InfoBubble from "../components/Infobubble";
+import useFormContext from '../hooks/useFormContext'
 
 const Section3 = () =>  {
   const [selectedBox, setCheckedBox] = useState(101);
 
+  const { data, handleDataChange } = useFormContext()
+  
   const handleChange = (val) => {
     setCheckedBox(val);
   };
@@ -30,13 +33,13 @@ const Section3 = () =>  {
         </div>
         <div className="section-form">
           <div className="form">
-            <Input question='Mieti milloin olet tavoitettavissa:' rowsVal='1'/>
-            <Input question='Milloin vastaat hakijoille:' rowsVal='1'/>
+            <Input question='Mieti milloin olet tavoitettavissa:' rowsVal='1' inputName='tavoitettavissa' value={data.tavoitettavissa} onChange={handleDataChange}/>
+            <Input question='Milloin vastaat hakijoille:' rowsVal='1' inputName='vastausaika' value={data.vastausaika} onChange={handleDataChange}/>
 
             <p style={{color: '#4D82AA', marginTop: '5rem', marginBottom: '0', fontWeight: '650'}}>Soittaminen on paras tapa kutsua henkilö haastatteluun!</p>
 
-            <Input question='Luonnostele kutsu haastatteluun:'/>
-            <Input question='Luonnostele vastaus hylätyille hakemuksille:'/>
+            <Input question='Luonnostele kutsu haastatteluun:' inputName='kutsu_haastatteluun' value={data.kutsu_haastatteluun} onChange={handleDataChange}/>
+            <Input question='Luonnostele vastaus hylätyille hakemuksille:' inputName='vastaus_hylatyille' value={data.vastaus_hylatyille} onChange={handleDataChange}/>
 
             <div className="form-checkbox-group">
               <Checkbox value={selectedBox === 101} onChange={() => handleChange(101)} label='Esimerkki A'/>

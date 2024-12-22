@@ -5,30 +5,21 @@ import Checkbox from '../components/Checkbox';
 import FormFooter from '../components/Form_Footer';
 import Input from '../components/Input';
 import Select from '../components/Select';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 import HelpBubble from "../components/Helpbubble";
 import InfoBubble from "../components/Infobubble";
+import useFormContext from '../hooks/useFormContext'
 
 const Section2 = () =>  {
   const [selectedBox, setCheckedBox] = useState(101);
-  const [selectField, setField] = useState('');
-  const [selectField2, setField2] = useState('');
-  const [startDate, setStartDate] = useState(new Date());
-  const [EndDate, setEndDate] = useState(new Date());
+
+  const { data, handleDataChange, handleDateChange_start, handleDateChange_end } = useFormContext()
 
   const handleChange = (val) => {
     setCheckedBox(val);
-  };
-
-  const handleFieldChange = (event) => {
-    setField(event.target.value);
-  };
-
-  const handleFieldChange2 = (event) => {
-    setField2(event.target.value);
   };
 
   const options = [
@@ -65,52 +56,54 @@ const Section2 = () =>  {
               <div><a href="https://www.oikotie.fi/" className="form-link">Oikotie</a></div>
             </div>
 
-            <Input question='Yrityksen sijainti:' rowsVal={1}/>
+            <Input question='Yrityksen sijainti:' rowsVal={1} inputName='yritys_sijainti' value={data.yritys_sijainti} onChange={handleDataChange}/>
 
             <div className="form-checkbox-group">
               <Checkbox value={selectedBox === 101} onChange={() => handleChange(101)} label='Etätyö tai monta sijaintia.'/>
               <Checkbox value={selectedBox === 102} onChange={() => handleChange(102)} label='Työpaikalla on eri sijainti kuin yrityksellä'/>
             </div>
 
-            { selectedBox === 101 && <Input question='Etätyön tiedot tai työpaikan sijainnit:' rowsVal={2}/>}
-            { selectedBox === 102 && <Input question='Työpaikan sijainti:' rowsVal={1}/>}
+            { selectedBox === 101 && <Input question='Etätyön tiedot tai työpaikan sijainnit:' rowsVal={2} inputName='tyopaikka_tiedot' value={data.tyopaikka_tiedot} onChange={handleDataChange}/>}
+            { selectedBox === 102 && <Input question='Työpaikan sijainti:' rowsVal={1} inputName='tyopaikka_sijainti' value={data.tyopaikka_sijainti} onChange={handleDataChange}/>}
 
-            <Input question='Yrityksen kuvaus:'/>
+            <Input question='Yrityksen kuvaus:' inputName='yritys_kuvaus' value={data.yritys_kuvaus} onChange={handleDataChange}/>
 
             <hr className="form-line"/>
 
             <Select
             label="Työsopimuksen tyyppi:"
             options={options}
-            value={selectField}
-            onChange={handleFieldChange}
+            inputName='tyosopimus_tyyppi'
+            value={data.tyosopimus_tyyppi}
+            onChange={handleDataChange}
             />
 
             <Select
             label="Työaika:"
             options={options2}
-            value={selectField2}
-            onChange={handleFieldChange2}
+            inputName='tyoaika'
+            value={data.tyoaika}
+            onChange={handleDataChange}
             />
 
-            <Input question='Tehtävänimike:' rowsVal={1}/>
+            <Input question='Tehtävänimike:' rowsVal={1} inputName='tehtavanimike' value={data.tehtavanimike} onChange={handleDataChange}/>
 
-            <Input question='Työnkuvaus:'/>
+            <Input question='Työnkuvaus:' inputName='tyonkuvaus' value={data.tyonkuvaus} onChange={handleDataChange}/>
 
             <hr className="form-line"/>
 
-            <Input question='Ilmoittajan nimi:' rowsVal={1}/>
-            <Input question='Ilmoittajan puhelin:' rowsVal={1}/>
-            <Input question='Hakemusten vastaanotto sähköpostiosoite:' rowsVal={1}/>
+            <Input question='Ilmoittajan nimi:' rowsVal={1} inputName='ilmj_nimi' value={data.ilmj_nimi} onChange={handleDataChange}/>
+            <Input question='Ilmoittajan puhelin:' rowsVal={1} inputName='ilmj_puhelin' value={data.ilmj_puhelin} onChange={handleDataChange}/>
+            <Input question='Hakemusten vastaanotto sähköpostiosoite:' rowsVal={1} inputName='ilmj_sahkoposti' value={data.ilmj_sahkoposti} onChange={handleDataChange}/>
 
             <p className="form-question">Ilmoituksen julkaisuaika:</p>
             <div className="date-group">
-              <DatePicker className='date' selected={startDate} onChange={(date) => setStartDate(date)}/>
+              <DatePicker className='date' name='julkaisuaika_alku' selected={data.julkaisuaika_alku} onChange={handleDateChange_start}/>
               <FaArrowRightLong size={'2.5rem'} color="#A09A99"/>
-              <DatePicker className='date' selected={EndDate} onChange={(date) => setEndDate(date)}/>
+              <DatePicker className='date' name='julkaisuaika_loppu' selected={data.julkaisuaika_loppu} onChange={handleDateChange_end}/>
             </div>
 
-            <Input question='Yhteyshenkilöt ja heidän yhteystietonsa:'/>
+            <Input question='Yhteyshenkilöt ja heidän yhteystietonsa:' inputName='yhteyshenkilo_yhteystiedot' value={data.yhteyshenkilo_yhteystiedot} onChange={handleDataChange}/>
 
             <hr className="form-line"/>
 

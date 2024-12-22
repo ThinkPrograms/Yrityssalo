@@ -8,10 +8,12 @@ import { MdOutlineContentCopy } from "react-icons/md";
 import FormFooter from '../components/Form_Footer';
 import HelpBubble from "../components/Helpbubble";
 import InfoBubble from "../components/Infobubble";
+import useFormContext from '../hooks/useFormContext'
 
 const Section4 = () =>  {
-  const [value, setValue] = useState('');
   const [checked, setChecked] = useState(false);
+
+  const { data, handleDataChange } = useFormContext()
 
   const text = 'Miten kuvailisit itseäsi, entä miten muut kuvailisivat sinua?\nMiksi haet tätä työpaikkaa?\nMinkälainen on mielestäsi hyvä työympäristö?\nMitä haluaisit kehittää itsessäsi?\nMikä on suurin saavutuksesi?'
   
@@ -20,10 +22,6 @@ const Section4 = () =>  {
     { label: 'Ryhmähaastattelu', value: 'Ryhma' },
     { label: 'Etähaastattelu', value: 'Eta' },
   ];
-
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  };
 
   const handleChangeBox = () => {
     setChecked(!checked);
@@ -46,11 +44,12 @@ const Section4 = () =>  {
             <Select
               label="Haastattelutyyppi: "
               options={options}
-              value={value}
-              onChange={handleChange}
+              inputName='haastattelutyyppi'
+              value={data.haastattelutyyppi}
+              onChange={handleDataChange}
             />
 
-              <Input question='Suunnittele haastattelurunko:'/>
+              <Input question='Suunnittele haastattelurunko:' inputName='haastattelurunko' value={data.haastattelurunko} onChange={handleDataChange}/>
               <div className="form-checkbox-group">
                 <Checkbox value={checked} onChange={handleChangeBox} label='Esimerkki kysymyksiä:'/>
               </div>

@@ -1,11 +1,12 @@
-const Input = ({ question, rowsVal = 9, value, onChange }) => {
+const Input = ({ question, rowsVal = 9, inputName, value, onChange }) => {
     return (
         <>
             <label className="form-question">{question}</label>
             <textarea 
                 className="form-input" 
+                name={inputName}
                 rows={rowsVal} 
-                value={value} 
+                defaultValue={value} 
                 onChange={onChange}
             ></textarea>
         </>

@@ -14,7 +14,7 @@ const Footer = () => {
                 <p className='footer-section'>
                 <a href="https://toihinsaloon.fi" className='footer-link'>toihinsaloon.fi</a>
                 <a href="https://investinsalo.fi" className='footer-link'>investinsalo.fi</a>
-                 <p className='footer-section-title'>Vapaat toimitilat</p>
+                <label className='footer-section-title'>Vapaat toimitilat</label>
                 <a href="https://visitsalo.fi" className='footer-link'>visitsalo.fi</a>
                 </p>
                 <p className='footer-section'>

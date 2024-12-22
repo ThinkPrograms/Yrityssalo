@@ -47,8 +47,8 @@ const Section1 = (page) =>  {
         </div>
         <div className="section-form">
           <div className="form">
-            <Input question='Mieti, millaista osaamista yrityksesi tarvitsee nyt ja tulevaisuudessa:' />
-            <Input question='Pohdi yrityksen lyhyen ja pitkän aikavälin tavoitteet:' />
+            <Input question='Mieti, millaista osaamista yrityksesi tarvitsee nyt ja tulevaisuudessa:' inputName='osaaminen' value={data.osaaminen} onChange={handleDataChange}/>
+            <Input question='Pohdi yrityksen lyhyen ja pitkän aikavälin tavoitteet:' inputName='tavoitteet' value={data.tavoitteet} onChange={handleDataChange}/>
 
             <div className="form-checkbox-group">
                 <Checkbox value={selectedBox === 101} onChange={() => handleChange(101)} label='Esimerkki A'/>
@@ -61,7 +61,7 @@ const Section1 = (page) =>  {
               { selectedBox === 102 && <p className="help-text" id="102">Koska nyt on joulusesonki, tarvitsemme jouluapulaista.</p>}
               { selectedBox === 103 && <p className="help-text" id="103">Tuontantomme on kasvussa.</p>}
             </div>
-            <Input question='Aikatauluta rekrytointisi:'/>
+            <Input question='Aikatauluta rekrytointisi:' inputName='aikataulu' value={data.aikataulu} onChange={handleDataChange}/>
             <div className="form-checkbox-group">
               <Checkbox value={checked} onChange={handleChange2nd} label='Esimerkki'/>
             </div>
@@ -75,7 +75,7 @@ const Section1 = (page) =>  {
               </div>
             }
 
-            <Input question='Arvioi budjetti rekrytoinnille:'/>
+            <Input question='Arvioi budjetti rekrytoinnille:' inputName='budjetti' value={data.budjetti} onChange={handleDataChange}/>
           </div>
           <FormFooter/>
         
