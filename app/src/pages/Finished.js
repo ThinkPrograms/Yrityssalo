@@ -1,9 +1,13 @@
 import '../css/Section.css'
 
 import { Page, Text, View, Document, StyleSheet, PDFViewer } from '@react-pdf/renderer';
+import useFormContext from '../hooks/useFormContext'
 
 const Finished = () =>  {
-  // Create styles
+
+  const { data } = useFormContext()
+
+  // Styles for pdf
   const styles = StyleSheet.create({
     page: {
       flexDirection: 'row',
@@ -16,8 +20,10 @@ const Finished = () =>  {
     }
   });
 
-  const text = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur eos quam enim rerum ipsum deserunt natus minus ex! Impedit eaque quis incidunt ex commodi aspernatur hic illum corporis a voluptates! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur eos quam enim rerum ipsum deserunt natus minus ex! Impedit eaque quis incidunt ex commodi aspernatur hic illum corporis a voluptates! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur eos quam enim rerum ipsum deserunt natus minus ex! Impedit eaque quis incidunt ex commodi aspernatur hic illum corporis a voluptates! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur eos quam enim rerum ipsum deserunt natus minus ex! Impedit eaque quis incidunt ex commodi aspernatur hic illum corporis a voluptates! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur eos quam enim rerum ipsum deserunt natus minus ex! Impedit eaque quis incidunt ex commodi aspernatur hic illum corporis a voluptates! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur eos quam enim rerum ipsum deserunt natus minus ex! Impedit eaque quis incidunt ex commodi aspernatur hic illum corporis a voluptates! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur eos quam enim rerum ipsum deserunt natus minus ex! Impedit eaque quis incidunt ex commodi aspernatur hic illum corporis a voluptates!'
+  console.log(data)
+  console.log(data.julkaisuaika_alku)
 
+  const text = data.osaaminen
     return (
       <>
         <img className="bg-image" style={{backgroundColor: '#676767'}} alt="Failed to load" />
