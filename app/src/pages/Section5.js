@@ -2,14 +2,17 @@ import '../css/Section.css'
 import bg from '../yrityssalo-form.png';
 import FormFooter from '../components/Form_Footer';
 import InfoBubble from "../components/Infobubble";
+import useFormContext from '../hooks/useFormContext';
 
 const Section5 = () =>  {
+  const {data, handleDataChange} = useFormContext()
+
   return (
     <>
       <img className="bg-image" src={bg} alt="Failed to load" />
       <div className="section">
         <div className="infobubbles">
-          <InfoBubble Yposition={5} text={<p>Sopimuspohjana voit käyttää vaikka seuraavaa työsuojelu.fi löytyvää pohjaa: <br /><br /><b>Sopimuspohja</b></p>}/>
+          <InfoBubble fieldName='muistilista_13_checked' value={data.muistilista_13_checked} onChange={handleDataChange} Yposition={5} text={<p>Sopimuspohjana voit käyttää vaikka seuraavaa työsuojelu.fi löytyvää pohjaa: <br /><br /><b>Sopimuspohja</b></p>}/>
         </div>
         <div className="section-form">
           <div className="form">

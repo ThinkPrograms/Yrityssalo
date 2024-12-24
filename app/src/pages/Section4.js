@@ -36,7 +36,7 @@ const Section4 = () =>  {
         <img className="bg-image" src={bg} alt="Failed to load" />
         <div className="section">
           <div className="infobubbles">
-            <InfoBubble Yposition={12} text={<p>Päätä tärkeimmät kysymykset, jotka tulee kysyttyä jokaiselta, vaikka itse haastattelut kulkisivat eri tavoilla.</p>}/>
+            <InfoBubble fieldName='muistilista_12_checked' value={data.muistilista_12_checked} onChange={handleDataChange} Yposition={12} text={<p>Päätä tärkeimmät kysymykset, jotka tulee kysyttyä jokaiselta, vaikka itse haastattelut kulkisivat eri tavoilla.</p>}/>
           </div>
           <div className="section-form">
             <div className="form">

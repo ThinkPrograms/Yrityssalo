@@ -48,7 +48,21 @@ export const FormProvider = ({children}) => {
         vastaus_hylatyille: "",
         haastattelutyyppi: "",
         haastattelurunko: "",
-        muistilista: [],
+        muistilista_1_checked: false,
+        muistilista_2_checked: false,
+        muistilista_3_checked: false,
+        muistilista_4_checked: false,
+        muistilista_5_checked: false,
+        muistilista_6_checked: false,
+        muistilista_7_checked: false,
+        muistilista_8_checked: false,
+        muistilista_9_checked: false,
+        muistilista_10_checked: false,
+        muistilista_11_checked: false,
+        muistilista_12_checked: false,
+        muistilista_13_checked: false,
+        muistilista_14_checked: false,
+        muistilista_15_checked: false,
       })
 
       const handleDateChange_start = (e) => {

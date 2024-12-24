@@ -5,7 +5,7 @@ import Checkbox from '../components/Checkbox';
 import FormFooter from '../components/Form_Footer';
 import Input from '../components/Input';
 import Select from '../components/Select';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -40,12 +40,12 @@ const Section2 = () =>  {
       <div className="section">
       
         <div className="infobubbles">
-          <InfoBubble Yposition={6} text={<p>Olethan muistanut jakaa ilmoitustasi sosiaalisessa mediassa. <br /><br /><b>Facebook <br />Instagram <br />Twitter</b></p>}/>
-          <InfoBubble Yposition={16} text={<p>Esittele yrityksesi toimintaa lyhyesti. Tiivistä asiat, jotka saattavat kiinnostaa hakijoitasi. <br /><br />Kerro mitä yrityksesi tarjoaa hakijalle.</p>}/>
-          <InfoBubble Yposition={38} text={<p>Anna tehtävänimikkeeksi mahdollisimman selkeä ja kuvaava nimi.</p>}/>
-          <InfoBubble Yposition={39} text={<p>Anna mahdollisimman selkeä kuvaus työn sisällöstä. <br /><br />Älä jaarittele, pidä tekstilohkot lyhyinä.</p>}/>
-          <InfoBubble Yposition={60} text={<p>Muista mainita mikäli otat vastaan video CV:itä</p>}/>
-          <InfoBubble Yposition={93} text={<p>Kuvalliset ilmoitukset saavat enemmän huomiota. <br /><br />Valitse sellainen kuva, joka vahvistaa yrityskuvaasi. <br /><br />Videon tekeminen kannattaa, jos sinulla on siihen resursseja.</p>}/>
+          <InfoBubble fieldName='muistilista_4_checked' value={data.muistilista_4_checked} onChange={handleDataChange} Yposition={6} text={<p>Olethan muistanut jakaa ilmoitustasi sosiaalisessa mediassa. <br /><br /><b>Facebook <br />Instagram <br />Twitter</b></p>}/>
+          <InfoBubble fieldName='muistilista_5_checked' value={data.muistilista_5_checked} onChange={handleDataChange} Yposition={16} text={<p>Esittele yrityksesi toimintaa lyhyesti. Tiivistä asiat, jotka saattavat kiinnostaa hakijoitasi. <br /><br />Kerro mitä yrityksesi tarjoaa hakijalle.</p>}/>
+          <InfoBubble fieldName='muistilista_6_checked' value={data.muistilista_6_checked} onChange={handleDataChange} Yposition={38} text={<p>Anna tehtävänimikkeeksi mahdollisimman selkeä ja kuvaava nimi.</p>}/>
+          <InfoBubble fieldName='muistilista_7_checked' value={data.muistilista_7_checked} onChange={handleDataChange} Yposition={39} text={<p>Anna mahdollisimman selkeä kuvaus työn sisällöstä. <br /><br />Älä jaarittele, pidä tekstilohkot lyhyinä.</p>}/>
+          <InfoBubble fieldName='muistilista_8_checked' value={data.muistilista_8_checked} onChange={handleDataChange} Yposition={60} text={<p>Muista mainita mikäli otat vastaan video CV:itä</p>}/>
+          <InfoBubble fieldName='muistilista_9_checked' value={data.muistilista_9_checked} onChange={handleDataChange} Yposition={93} text={<p>Kuvalliset ilmoitukset saavat enemmän huomiota. <br /><br />Valitse sellainen kuva, joka vahvistaa yrityskuvaasi. <br /><br />Videon tekeminen kannattaa, jos sinulla on siihen resursseja.</p>}/>
         </div>
         <div className="section-form">
           <div className="form">

@@ -28,8 +28,8 @@ const Section3 = () =>  {
       <img className="bg-image" src={bg} alt="Failed to load" />
       <div className="section">
         <div className="infobubbles">
-          <InfoBubble Yposition={7} text={<p>Yrityskuvan kannalta on hyvä vastata kaikille hakijoille.</p>}/>
-          <InfoBubble Yposition={18} text={<p>Yrityskuvan kannalta on kannattavaa luoda hyvä hakijakokemus: <br /><br />- Ole täsmällinen. <br />- Arvosta hakemuksia. <br />- Ole kohtelias.</p>}/>
+          <InfoBubble fieldName='muistilista_10_checked' value={data.muistilista_10_checked} onChange={handleDataChange} Yposition={7} text={<p>Yrityskuvan kannalta on hyvä vastata kaikille hakijoille.</p>}/>
+          <InfoBubble fieldName='muistilista_11_checked' value={data.muistilista_11_checked} onChange={handleDataChange} Yposition={18} text={<p>Yrityskuvan kannalta on kannattavaa luoda hyvä hakijakokemus: <br /><br />- Ole täsmällinen. <br />- Arvosta hakemuksia. <br />- Ole kohtelias.</p>}/>
         </div>
         <div className="section-form">
           <div className="form">

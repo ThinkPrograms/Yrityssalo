@@ -41,9 +41,9 @@ const Section1 = (page) =>  {
       <img className="bg-image" src={bg} alt="Failed to load" />
       <div className="section">
         <div className="infobubbles">
-          <InfoBubble Yposition={7} text={<p>Tekijän löytäminen on helpompaa kun tiedät, mitä tarvitset. <br /><br />Virherekrytointi on suurin vältettävissä oleva menoerä.</p>}/>
-          <InfoBubble Yposition={48} text={<p>Varaa rekrytointiin tarpeeksi aikaa. <br /><br />Pidä aikataulusta kiinni. <br /><br />Yleensä pienyrittäjän rekrytointiin kuluu aikaa n. kuukausi, josta työaikaa on n. 2-5 kokonaista työpäivää.</p>}/>
-          <InfoBubble Yposition={52.5} text={<p>Vastavalmistunut tai vastaava on aluksi halvempi palkattava, tosin perehdytys vie alkuun siivun tuottavuudesta. <br /><br />Kokenut osaaja taas voi tuoda yritykselle suurempia tuloja nopeammin, mutta on kalliimpi palkattava</p>}/>
+          <InfoBubble fieldName='muistilista_1_checked' value={data.muistilista_1_checked} onChange={handleDataChange} Yposition={7} text={<p>Tekijän löytäminen on helpompaa kun tiedät, mitä tarvitset. <br /><br />Virherekrytointi on suurin vältettävissä oleva menoerä.</p>}/>
+          <InfoBubble fieldName='muistilista_2_checked' value={data.muistilista_2_checked} onChange={handleDataChange} Yposition={48} text={<p>Varaa rekrytointiin tarpeeksi aikaa. <br /><br />Pidä aikataulusta kiinni. <br /><br />Yleensä pienyrittäjän rekrytointiin kuluu aikaa n. kuukausi, josta työaikaa on n. 2-5 kokonaista työpäivää.</p>}/>
+          <InfoBubble fieldName='muistilista_3_checked' value={data.muistilista_3_checked} onChange={handleDataChange} Yposition={52.5} text={<p>Vastavalmistunut tai vastaava on aluksi halvempi palkattava, tosin perehdytys vie alkuun siivun tuottavuudesta. <br /><br />Kokenut osaaja taas voi tuoda yritykselle suurempia tuloja nopeammin, mutta on kalliimpi palkattava</p>}/>
         </div>
         <div className="section-form">
           <div className="form">
