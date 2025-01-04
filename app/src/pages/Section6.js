@@ -12,8 +12,8 @@ const Section6 = () =>  {
         <img className="bg-image" src={bg} alt="Failed to load" />
         <div className="section">
           <div className="infobubbles">
-            <InfoBubble fieldName='muistilista_14_checked' value={data.muistilista_14_checked} onChange={handleDataChange} Yposition={7} text={<p>Lisää tietoa työturvallisuuslaista: <br /><br /><b>Työturvallisuus</b></p>}/>
-            <InfoBubble fieldName='muistilista_15_checked' value={data.muistilista_15_checked} onChange={handleDataChange} Yposition={12} text={<p>Perehdytyskansio on infopaketti yrityksesi uudelle työntekijälle. <br /><br />Perehdytyskansion pohjan löydät täältä: <br /><br /><b>Perehdytyspohja</b></p>}/>
+            <InfoBubble fieldName='muistilista_14_checked' value={data.muistilista_14_checked} onChange={handleDataChange} Yposition={7} text={<p>Lisää tietoa työturvallisuuslaista: <br /><br /><a href='https://www.finlex.fi/fi/laki/ajantasa/2002/20020738'>Työturvallisuus</a></p>}/>
+            <InfoBubble fieldName='muistilista_15_checked' value={data.muistilista_15_checked} onChange={handleDataChange} Yposition={12} text={<p>Perehdytyskansio on infopaketti yrityksesi uudelle työntekijälle. <br /><br />Perehdytyskansion pohjan löydät täältä: <br /><br /><a href='https://www.perehdytysopas.fi/'>Perehdytyspohja</a></p>}/>
           </div>
           <div className="section-form">
             <div className="form">

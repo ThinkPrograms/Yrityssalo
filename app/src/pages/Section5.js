@@ -12,7 +12,7 @@ const Section5 = () =>  {
       <img className="bg-image" src={bg} alt="Failed to load" />
       <div className="section">
         <div className="infobubbles">
-          <InfoBubble fieldName='muistilista_13_checked' value={data.muistilista_13_checked} onChange={handleDataChange} Yposition={5} text={<p>Sopimuspohjana voit käyttää vaikka seuraavaa työsuojelu.fi löytyvää pohjaa: <br /><br /><b>Sopimuspohja</b></p>}/>
+          <InfoBubble fieldName='muistilista_13_checked' value={data.muistilista_13_checked} onChange={handleDataChange} Yposition={5} text={<p>Sopimuspohjana voit käyttää vaikka seuraavaa työsuojelu.fi löytyvää pohjaa: <br /><br /><a href='https://tyosuojelu.fi/documents/154017715/168016241/tyosopimus_mallipohja_FI.pdf/c7f72d4a-4736-4223-71ed-cfd01bd620aa/tyosopimus_mallipohja_FI.pdf?t=1719504041415'>Sopimuspohja</a></p>}/>
         </div>
         <div className="section-form">
           <div className="form">
