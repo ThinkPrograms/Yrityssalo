@@ -36,10 +36,10 @@ const Finished = () =>  {
 
     content += '2. Työpaikan sijainti tai sijainnit: \n\n' + data.tyopaikka_tiedot + data.tyopaikka_sijainti + '\n\n\n'
 
-    content += '6. Yrityksen kuvaus: \n\n' + data.yritys_kuvaus + '\n\n\n'
-    content += '3. Työsopimuksen tyyppi: \n\n' + data.tyosopimus_tyyppi + '\n\n\n'
-    content += '4. Työaika: \n\n' + data.tyoaika + '\n\n\n'
-    content += '5. Tehtävänimike: \n\n' + data.tehtavanimike + '\n\n\n'
+    content += '3. Yrityksen kuvaus: \n\n' + data.yritys_kuvaus + '\n\n\n'
+    content += '4. Työsopimuksen tyyppi: \n\n' + data.tyosopimus_tyyppi + '\n\n\n'
+    content += '5. Työaika: \n\n' + data.tyoaika + '\n\n\n'
+    content += '6. Tehtävänimike: \n\n' + data.tehtavanimike + '\n\n\n'
     content += '7. Työn kuvaus: \n\n' + data.tyonkuvaus + '\n\n\n'
     content += '8. Ilmoittajan nimi: \n\n' + data.ilmj_nimi + '\n\n\n'
     content += '9. Ilmoittajan puhelinnumero: \n\n' + data.ilmj_puhelin + '\n\n\n'
